@@ -1,0 +1,131 @@
+
+/* Utility styles
+================================ */
+
+.oFloAuto{  /*overflow auto for elements with collapsing margins between parent and child*/
+	overflow: auto;
+}
+
+.clear:after{	/*ye olde clearfix*/
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+
+/* Page Styles
+================================ */
+
+body{
+	font-family: 'Vollkorn', Georgia, Times, serif; /*default text font*/
+	color:#ddd; /*default text colour for the page*/
+	background-color:#111; /*background colour for whole page*/
+}
+
+.main-content {
+	padding:2% 15px;
+}
+
+*{ 
+	box-sizing:border-box;	
+}
+
+img{
+	max-width:100%; /*make all images fill the width of their containers.*/ 
+}
+
+ul{
+	padding:0;	/*remove padding for uls by default*/
+}
+
+li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration:none;
+	color:#ddd;
+}
+
+h1,h2{
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+h1{
+	font-size: 2.5em;
+}
+
+/* Header, footer and banner
+================================ */
+
+header{
+padding: 2% 15px;
+}
+
+.menu-toggle{
+	padding:20px 0;
+	border-bottom: 2px solid #bfbfbf;
+}
+
+.menu-toggle img{
+	display: block;
+	margin: 0 auto;
+}
+
+.mob-nav{
+	padding: 5px 12%;
+	display: none;
+}
+
+.mob-nav ul{
+	border-top: solid 1px #bfbfbf;
+	border-bottom: solid 1px #bfbfbf;
+	margin-top: 0;
+}
+
+.mob-nav li{
+	text-align: center;
+	background-color:#111;
+
+}
+
+.mob-nav li:nth-child(even){
+	background-color: #5C5C5C; /*alternate colours in the mobile nav list items*/
+}
+
+.mob-nav a{
+	display: block;
+	padding: 15px 0;
+
+}
+
+.main-nav{
+	display:none; /*hide non-mobile nav*/
+}
+
+.logo-container{
+	width:37%;
+	margin: 15px auto 0;
+	text-align: center;
+}
+
+footer{
+	padding: 2% 0 2%;
+	text-align: center;
+}
+
+
+
+/*****************************************
+		PAGE:INDEX
+******************************************/
+
+.main-content h1{
+	text-align: center; /*center the main title*/
+	margin-top: 0;
+}
+
+iframe{
+	display:block; /*center the youtube video*/
+	margin: 0 auto;
+}

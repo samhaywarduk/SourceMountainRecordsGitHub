@@ -1,0 +1,71 @@
+
+@media screen and (min-width:768px){  /*tablet version*/
+
+	
+	/* Page Styles
+	================================ */
+	
+
+	/* Header, footer and banner
+	================================ */
+
+	header{
+		background-color:#292929;
+	}
+
+	.menu-toggle, .mob-nav{
+		display:none; /*hide the mobile nav toggle and menu*/
+	}
+
+	.main-nav{
+		display: block;
+		 /*display non-mobile nav*/
+	}
+
+	.main-nav ul{
+		margin-top: 0;
+	}
+
+	.main-nav li{
+		display: inline-block;
+		margin-left:10px;
+	}
+
+	.main-nav{
+		float:right;
+		margin-top: 17%;
+		margin-right: 50px;
+	}
+
+	.logo-container{
+		width:15%;
+		margin-left:31px;  
+		float: left;
+
+	}
+
+	/*****************************************
+		PAGE:INDEX
+	******************************************/
+
+
+	.main-content h1{
+		font-size: 3.25em
+	}
+
+}
+
+
+
+/*    We use the following media queries to create the key breakpoints in our grid system.
+
+    Extra small devices (phones, up to 480px): No media query since this is the default in Bootstrap
+
+    Small devices (tablets, 768px and up): @media (min-width: @screen-sm) { ... }
+
+    Medium devices (desktops, 992px and up): @media (min-width: @screen-md) { ... }
+
+    Large devices (large desktops, 1200px and up): @media (min-width: @screen-lg) { ... }
+
+    http://stackoverflow.com/questions/19592968/bootstrap-3-breakpoints-and-media-queries
+*/
