@@ -23,7 +23,7 @@ body{
 }
 
 .main-content {
-	padding:2% 15px;
+	padding:2% 4%;
 }
 
 *{ 
@@ -114,6 +114,10 @@ padding: 2% 15px;
 footer{
 	padding: 2% 0 2%;
 	text-align: center;
+}
+
+.social-main{
+	display: none;
 }
 
 .social-icon{

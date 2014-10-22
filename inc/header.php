@@ -27,6 +27,11 @@
 						<li><a href="index.php">About &#47; Contact</a></li>
 					</ul>
 				</nav>
+
+				<div class="logo-container">
+					<a href="index.html"><img src="img/logo-neg.png"></a>
+				</div>
+				
 				<nav class="main-nav">
 					<ul>
 						<li><a href="index.php">Artists &amp; Music</a></li>
@@ -38,8 +43,9 @@
 				</nav>
 
 				
-				<div class="logo-container">
-					<a href="index.html"><img src="img/logo-neg.png"></a>
+
+				<div class="social-main">
+					<p>Join us on <a href="https://www.facebook.com/sourcemountainrecords">Facebook</a> and <a href="https://soundcloud.com/source-mountain-records">SoundCloud!</a></p>
 				</div>
 			</header>
 
