@@ -17,7 +17,7 @@
 ================================ */
 
 body{
-	font-family: 'Vollkorn', Georgia, Times, serif; /*default text font*/
+	font-family: 'Raleway', sans-serif; /*default text font*/
 	color:#ddd; /*default text colour for the page*/
 	background-color:#111; /*background colour for whole page*/
 }
@@ -47,12 +47,13 @@ a{
 	color:#ddd;
 }
 
-h1,h2{
-	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+h1{
+	font-family: 'Chelsea Market', cursive;
+	font-size: 2.5em;
 }
 
-h1{
-	font-size: 2.5em;
+p{
+	line-height: 1.3em;
 }
 
 /* Header, footer and banner

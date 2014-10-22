@@ -34,7 +34,7 @@
 			if(getWidth() >= 922){
 				$('iframe').attr(vidDimensionsDesktop);
 			}
-			if(getWidth() <= 768){  //this isnt needed in the initial page load function call as the smallest setting is the default (see the attributes of the iframe in html)
+			if(getWidth() < 768){  //this isnt needed in the initial page load function call as the smallest setting is the default (see the attributes of the iframe in html)
 		 		$('iframe').attr(vidDimensionsMobile);
 		 	}
 
