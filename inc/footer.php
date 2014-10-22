@@ -1,6 +1,9 @@
 			</section>
 
 			<footer>
+				<a href="https://www.facebook.com/sourcemountainrecords"><img class="social-icon" src="img/facebook.png" alt="Facebook icon"></a>
+				<a href="https://soundcloud.com/source-mountain-records"><img class="social-icon" src="img/soundcloud.png" alt="Soundcloud icon"></a>
+
 				<p> &copy; <?php echo date('Y'); ?> Source Mountain Records </p>
 			</footer>
 		</div>
