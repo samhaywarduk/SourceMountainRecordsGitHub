@@ -11,6 +11,9 @@
 
 	header{
 		background-color:#292929;
+	}
+
+	.header-content{
 		position:relative; /*for absolute positioning of nav*/
 	}
 
@@ -20,10 +23,9 @@
 
 	.main-nav{
 		display: block;  /*display non-mobile nav*/
-		position: absolute; /*Following rules position the nav in the bottom right, and keep the nav lines up with the logo as it changes size*/
+		position: absolute; /*Following rules position the nav in the bottom right*/
 		bottom: 0;
 		right: 4%;
-		margin-bottom:2%;
 		font-size: 1.125em;
 	}
 
@@ -79,7 +81,34 @@
 
 }
 
+@media screen and (min-width:992px){  /*desktop version*/
 
+	/* Header, footer and banner
+	================================ */
+
+	.header-content,
+	.main-content{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.main-nav{
+		font-size: 1.2em;
+	}
+
+	/* Page Styles
+	================================ */
+
+	/*PART OF HEADER BANNER FOOTER
+	.main-content{
+		max-width: 1200px;
+		margin: 0 auto;
+	}*/
+
+	/*****************************************
+		PAGE:INDEX
+	******************************************/
+}
 
 /*    We use the following media queries to create the key breakpoints in our grid system.
 

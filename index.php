@@ -3,7 +3,9 @@
 
 	<h1>Source Mountain Records</h1>
 	<h2>Check out our latest!</h2>
-	<iframe width="360" height="203" src="http://www.youtube.com/embed/nm2ZX7xH_jk" frameborder="0" allowfullscreen></iframe>
+	<div class="video-container">
+		<iframe width="360" height="203" src="http://www.youtube.com/embed/nm2ZX7xH_jk" frameborder="0" allowfullscreen></iframe>
+	</div>
 
 	<section class="news oFloAuto">
 		<h2>News!</h2>

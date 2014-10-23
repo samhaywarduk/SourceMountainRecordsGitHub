@@ -17,35 +17,34 @@
 			<div class="menu-toggle">
 				<img src="img/toggle-menu.png">
 			</div>
-			<header class="clear">
-				<nav class="mob-nav">
-					<ul>
-						<li><a href="index.php">Artists &amp; Music</a></li>
-						<li><a href="index.php">News</a></li>
-						<li><a href="index.php">Reviews</a></li>
-						<li><a href="index.php">Gallery</a></li>
-						<li><a href="index.php">About &#47; Contact</a></li>
-					</ul>
-				</nav>
-
-				<div class="logo-container">
-					<a href="index.html"><img src="img/logo-neg.png"></a>
-				</div>
-				
-				<nav class="main-nav">
-					<ul>
-						<li><a href="index.php">Artists &amp; Music</a></li>
-						<li><a href="index.php">News</a></li>
-						<li><a href="index.php">Reviews</a></li>
-						<li><a href="index.php">Gallery</a></li>
-						<li><a href="index.php">About &#47; Contact</a></li>
-					</ul>
-				</nav>
-
-				
-
-				<div class="social-main">
-					<p>Join us on <a href="https://www.facebook.com/sourcemountainrecords">Facebook</a> and <a href="https://soundcloud.com/source-mountain-records">SoundCloud!</a></p>
+			<header>
+				<div class="header-content clear">
+					<nav class="mob-nav">
+						<ul>
+							<li><a href="index.php">Artists &amp; Music</a></li>
+							<li><a href="index.php">News</a></li>
+							<li><a href="index.php">Reviews</a></li>
+							<li><a href="index.php">Gallery</a></li>
+							<li><a href="index.php">About &#47; Contact</a></li>
+						</ul>
+					</nav>
+	
+					<div class="logo-container">
+						<a href="index.html"><img src="img/logo-neg.png"></a>
+					</div>
+					
+					<nav class="main-nav">
+						<ul>
+							<li><a href="index.php">Artists &amp; Music</a></li>
+							<li><a href="index.php">News</a></li>
+							<li><a href="index.php">Reviews</a></li>
+							<li><a href="index.php">Gallery</a></li>
+							<li><a href="index.php">About &#47; Contact</a></li>
+						</ul>
+					</nav>
+					<div class="social-main">
+						<p>Join us on <a href="https://www.facebook.com/sourcemountainrecords">Facebook</a> and <a href="https://soundcloud.com/source-mountain-records">SoundCloud!</a></p>
+					</div>
 				</div>
 			</header>
 

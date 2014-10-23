@@ -140,3 +140,7 @@ iframe{
 	display:block; /*center the youtube video*/
 	margin: 0 auto;
 }
+
+.video-container{
+	padding: 1.5% 0;
+}
