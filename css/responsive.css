@@ -80,6 +80,21 @@
 		font-size: 3.25em
 	}
 
+
+	/*****************************************
+		PAGE:GALLERY
+	******************************************/
+
+	.image-gallery{
+		width: initial;
+	}
+
+	.image-gallery li{
+		float:left;
+		width: 45%;
+		margin: 2.5%;
+	}
+
 }
 
 @media screen and (min-width:992px){  /*desktop version*/
@@ -114,6 +129,15 @@
 	/*****************************************
 		PAGE:INDEX
 	******************************************/
+
+	/*****************************************
+		PAGE:GALLERY
+	******************************************/
+
+	.image-gallery li{
+		 width:28.3333%;
+	}
+
 }
 
 /*    We use the following media queries to create the key breakpoints in our grid system.

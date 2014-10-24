@@ -60,7 +60,7 @@ p{
 ================================ */
 
 header{
-padding: 2% 15px;
+padding: 1% 15px 2%;
 }
 
 .menu-toggle{
@@ -152,11 +152,39 @@ iframe{
 ******************************************/
 
 .image-gallery{
-	max-width: 75%;
-	margin: 0 auto;
+	width: 75%;
+	margin: 3% auto 0;
 }
 
 .image-gallery li{
-	display:block;  /*display block to make list item fill width*/
+	margin-bottom: 12%;
+	background-color: #292929;
 }
 
+.image-gallery p{
+	padding: 3%;
+	margin: 0;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.overlay {
+ 	background:rgba(0,0,0,0.7);
+ 	width:100%;
+ 	height:100%;
+ 	position:fixed;
+ 	top:0;
+ 	left:0;
+ 	display:none;
+ 	text-align:center;
+}
+
+.overlay img {
+	border: 1px solid #ddd;
+ 	margin-top: 10%;
+}
+
+.overlay p{
+	margin-left: 15%;
+	margin-right: 15%;
+}
