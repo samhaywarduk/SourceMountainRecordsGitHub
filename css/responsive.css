@@ -35,7 +35,8 @@
 
 	.main-nav li{
 		display: inline-block;
-		margin-left:10px;
+		margin-left:5px;
+		letter-spacing: -0.025em;
 	}
 
 	.main-nav a{
@@ -94,6 +95,11 @@
 
 	.main-nav{
 		font-size: 1.2em;
+	}
+
+	.main-nav li{  
+		margin-left:10px;  /*spread out the nav text now there is more room*/
+		letter-spacing: initial;
 	}
 
 	/* Page Styles

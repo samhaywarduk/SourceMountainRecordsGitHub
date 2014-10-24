@@ -114,6 +114,7 @@ padding: 2% 15px;
 footer{
 	padding: 2% 0 2%;
 	text-align: center;
+	clear:both; /*clears floated elements and stays at the bottom of the page*/
 }
 
 .social-main{
@@ -144,3 +145,18 @@ iframe{
 .video-container{
 	padding: 1.5% 0;
 }
+
+
+/*****************************************
+		PAGE:GALLERY
+******************************************/
+
+.image-gallery{
+	max-width: 75%;
+	margin: 0 auto;
+}
+
+.image-gallery li{
+	display:block;  /*display block to make list item fill width*/
+}
+

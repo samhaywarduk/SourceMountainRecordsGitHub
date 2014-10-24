@@ -21,24 +21,26 @@
 				<div class="header-content clear">
 					<nav class="mob-nav">
 						<ul>
+							<li><a href="index.php">Home</a></li>
 							<li><a href="index.php">Artists &amp; Music</a></li>
 							<li><a href="index.php">News</a></li>
 							<li><a href="index.php">Reviews</a></li>
-							<li><a href="index.php">Gallery</a></li>
+							<li><a href="gallery.php">Gallery</a></li>
 							<li><a href="index.php">About &#47; Contact</a></li>
 						</ul>
 					</nav>
 	
 					<div class="logo-container">
-						<a href="index.html"><img src="img/logo-neg.png"></a>
+						<a href="index.php"><img src="img/logo-neg.png"></a>
 					</div>
 					
 					<nav class="main-nav">
 						<ul>
+							<li><a href="index.php">Home</a></li>
 							<li><a href="index.php">Artists &amp; Music</a></li>
 							<li><a href="index.php">News</a></li>
 							<li><a href="index.php">Reviews</a></li>
-							<li><a href="index.php">Gallery</a></li>
+							<li><a href="gallery.php">Gallery</a></li>
 							<li><a href="index.php">About &#47; Contact</a></li>
 						</ul>
 					</nav>
