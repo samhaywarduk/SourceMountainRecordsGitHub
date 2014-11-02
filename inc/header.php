@@ -22,7 +22,7 @@
 					<nav class="mob-nav">
 						<ul>
 							<li><a href="index.php">Home</a></li>
-							<li><a href="index.php">Artists &amp; Music</a></li>
+							<li><a href="artists.php">Artists &amp; Music</a></li>
 							<li><a href="index.php">News</a></li>
 							<li><a href="index.php">Reviews</a></li>
 							<li><a href="gallery.php">Gallery</a></li>
@@ -37,7 +37,7 @@
 					<nav class="main-nav">
 						<ul>
 							<li><a href="index.php">Home</a></li>
-							<li><a href="index.php">Artists &amp; Music</a></li>
+							<li><a href="artists.php">Artists &amp; Music</a></li>
 							<li><a href="index.php">News</a></li>
 							<li><a href="index.php">Reviews</a></li>
 							<li><a href="gallery.php">Gallery</a></li>

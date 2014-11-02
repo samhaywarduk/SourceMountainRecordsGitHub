@@ -11,6 +11,10 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script>
 
+	//*******************************
+	//			RESPONSIVE YOUTUBE
+	//*******************************
+
 		var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 		var vidDimensionsMobile = {width:"360", height:"203"};
 		var vidDimensionsTablet = {width:"560", height:"315"};
@@ -32,13 +36,13 @@
 
 		function youtubeResponsive(){
 			if(getWidth() >= 768){  //if browser width 768 or more..
-				$('iframe').attr(vidDimensionsTablet);  //set the iframe(youtube) height & width attributes
+				$('.video-container iframe').attr(vidDimensionsTablet);  //set the iframe(youtube) height & width attributes
 			}
 			if(getWidth() >= 922){
-				$('iframe').attr(vidDimensionsDesktop);
+				$('.video-container iframe').attr(vidDimensionsDesktop);
 			}
 			if(getWidth() < 768){  //this isnt needed in the initial page load function call as the smallest setting is the default (see the attributes of the iframe in html)
-		 		$('iframe').attr(vidDimensionsMobile);
+		 		$('.video-container iframe').attr(vidDimensionsMobile);
 		 	}
 
 		}
@@ -74,6 +78,10 @@
 
 		// });
 
+		//*******************************
+		//			LIGHTBOX
+		//*******************************
+
 		var $overlay = $('<div class="overlay"></div>');
 		var $image = $("<img>");
 		var $caption = $("<p></p>");
@@ -106,6 +114,33 @@
 		$overlay.click(function(){
 		  //Hide the overlay
 		  $overlay.hide();
-		});	
+		});
+
+		//*******************************
+		//		 SPEAKER ICON AND SAMPLE
+		//*******************************
+
+		$('.soundCloudSample').hide();
+
+		$('.speaker-icon').click(function(){  //when speaker icon is clicked
+			var timeOut;
+			var speakerImage;
+			
+			event.preventDefault();  //prevent clicking  the speaker from folling the link its nested in
+			speakerImage = this;  //store a reference to the actual clicked button	
+			$(speakerImage).attr("src", "img/speaker-sound-invert.png")  // change the image's src attribute to the other speaker image
+
+			timeOut = setTimeout(function(){  //this all changes the image back after 1000 miliseconds
+			$(speakerImage).attr("src", "img/speaker-sound.png")
+			}, 1000);
+
+			$('.soundCloudSample').slideToggle('slow');
+
+		});
+
+
+
+		
+
 	</script>
 </html>

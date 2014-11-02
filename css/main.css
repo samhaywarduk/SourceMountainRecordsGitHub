@@ -137,7 +137,7 @@ footer{
 	margin-top: 0;
 }
 
-iframe{
+.video-container iframe{
 	display:block; /*center the youtube video*/
 	margin: 0 auto;
 }
@@ -188,3 +188,35 @@ iframe{
 	margin-left: 15%;
 	margin-right: 15%;
 }
+
+/*****************************************
+		PAGE:ARTISTS
+******************************************/
+
+.artists{
+	width: 75%;
+	margin: 3% auto 0;
+}
+
+.artists li{
+	margin-bottom: 12%;
+	text-align: center;
+
+}
+
+.artist-image{
+	position:relative;
+}
+
+.artist-image img{
+	max-height: 100%;
+}
+
+.speaker-icon{
+	position: absolute;
+	width:25%;
+	bottom:2%;
+	left:1%;
+}
+
+
