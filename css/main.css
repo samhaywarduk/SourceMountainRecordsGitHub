@@ -201,20 +201,15 @@ footer{
 .artists li{
 	margin-bottom: 12%;
 	text-align: center;
-
 }
 
 .artist-image{
 	position:relative;
 }
 
-.artist-image img{
-	max-height: 100%;
-}
-
 .speaker-icon{
 	position: absolute;
-	width:25%;
+	width:60px;
 	bottom:2%;
 	left:1%;
 }

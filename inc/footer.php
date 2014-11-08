@@ -124,17 +124,20 @@
 
 		$('.speaker-icon').click(function(){  //when speaker icon is clicked
 			var timeOut;
-			var speakerImage;
+			var $speakerImage;
+			var associatedSoundCloud;
 			
-			event.preventDefault();  //prevent clicking  the speaker from folling the link its nested in
-			speakerImage = this;  //store a reference to the actual clicked button	
-			$(speakerImage).attr("src", "img/speaker-sound-invert.png")  // change the image's src attribute to the other speaker image
+			event.preventDefault();  //prevent clicking the speaker from folling the link its nested in
+			$speakerImage = $(this);  //store a reference to the actual clicked button	
+			$speakerImage.attr("src", "img/speaker-sound-invert.png")  // change the image's src attribute to the other speaker image
 
 			timeOut = setTimeout(function(){  //this all changes the image back after 1000 miliseconds
-			$(speakerImage).attr("src", "img/speaker-sound.png")
+			$speakerImage.attr("src", "img/speaker-sound.png")
 			}, 1000);
 
-			$('.soundCloudSample').slideToggle('slow');
+			$speakerImage.parent().parent().next().slideToggle('slow');
+
+		
 
 		});
 
