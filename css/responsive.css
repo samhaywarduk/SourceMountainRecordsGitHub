@@ -95,6 +95,40 @@
 		margin: 2.5%;
 	}
 
+	/*****************************************
+		PAGE:ARTISTS & MUSIC
+	******************************************/
+
+	.artists{
+		width: initial;  /*remove 75% width as applied in mob version*/
+	}
+
+	.artists li {  /*2 column layout*/
+		float:left;
+		width: 45%;
+		margin: 2.5%;
+	}
+
+	.artists li:nth-child(3n){	/*cause every third list item to clear the two items above it*/
+		clear:left;
+	}
+
+	/*****************************************
+		PAGE:ONE-ARTIST
+	******************************************/
+
+	.artist-profile{
+		width: initial;
+	}
+
+	.artist-image-container{
+		float:left;
+		width:60%;
+		margin-right: 3%;
+		margin-bottom: 2%;
+	}
+
+
 }
 
 @media screen and (min-width:992px){  /*desktop version*/
@@ -137,6 +171,24 @@
 	.image-gallery li{
 		 width:28.3333%;
 	}
+
+	/*****************************************
+		PAGE:ARTISTS
+	******************************************/
+
+	.artists li{  /*3 column layout*/
+		 width:28.3333%;
+	}
+
+	.artists li:nth-child(3n){	/*make it so that every third list item does not clear the items above (as done in tablet version)*/
+		clear:initial;
+	}
+
+	.artists li:nth-child(4n){	/*cause every fourth list item to clear the three items above it*/
+		clear:left;
+	}
+
+
 
 }
 

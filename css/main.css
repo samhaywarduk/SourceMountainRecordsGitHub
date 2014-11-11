@@ -209,9 +209,30 @@ footer{
 
 .speaker-icon{
 	position: absolute;
-	width:60px;
+	width:40px;
 	bottom:2%;
 	left:1%;
 }
 
 
+/*****************************************
+		PAGE:ONE-ARTIST
+******************************************/
+
+.artist-profile{
+	width:75%;
+	margin: 3% auto 0;
+}
+
+.artist-profile h2{
+	text-align: center;
+}
+
+.artist-image-container{
+	max-width: 500px;
+}
+
+.artist-videos,
+.artist-soundClouds{
+	margin-bottom: 5%;
+}

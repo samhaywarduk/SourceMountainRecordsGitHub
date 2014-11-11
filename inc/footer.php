@@ -15,7 +15,7 @@
 	//			RESPONSIVE YOUTUBE
 	//*******************************
 
-		var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+		
 		var vidDimensionsMobile = {width:"360", height:"203"};
 		var vidDimensionsTablet = {width:"560", height:"315"};
 		var vidDimensionsDesktop = {width:"853", height:"480"};
@@ -120,7 +120,7 @@
 		//		 SPEAKER ICON AND SAMPLE
 		//*******************************
 
-		$('.soundCloudSample').hide();
+		//$('.soundCloudSample').hide(); **************UNCOMMENT THIS LATER***************************
 
 		$('.speaker-icon').click(function(){  //when speaker icon is clicked
 			var timeOut;
