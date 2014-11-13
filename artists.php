@@ -5,7 +5,7 @@
 		<ul class="artists clear">
 			<li class="oFloAuto">
 				<div class="artist-image">
-					<a href="artist.php">
+					<a href="artist.php?id=LukeDeSciscio">
 						<h2>Luke De-Sciscio</h2>
 						<img src="img/luke.jpg">
 						<img class="speaker-icon" src="img/speaker-sound.png">
@@ -17,7 +17,7 @@
 			</li>
 			<li class="oFloAuto">
 				<div class="artist-image">
-					<a href="artist.php">
+					<a href="artist.php?id=SiennaChorus">
 						<h2>Sienna Chorus</h2>
 						<img src="img/sienna.png">
 						<img class="speaker-icon" src="img/speaker-sound.png">
@@ -29,7 +29,7 @@
 			</li>
 			<li class="oFloAuto">
 				<div class="artist-image">
-					<a href="artist.php">
+					<a href="artist.php?id=Rhain">
 						<h2>RHAIN</h2>
 						<img src="http://lorempixel.com/640/640/nightlife/">
 						<img class="speaker-icon" src="img/speaker-sound.png">

@@ -1,13 +1,30 @@
-<?php include('inc/header.php'); ?>
+ <?php
+ include("inc/artist-data.php");
+
+if (isset($_GET["id"])) {
+	$artist_id = $_GET["id"];
+	if (isset($artist_data[$artist_id])) {
+		$artist = $artist_data[$artist_id];
+	}
+}
+if (!isset($artist)) {
+	header("Location: artists.php");
+	exit();
+}
+?>
+
+
+
+
+ <?php include('inc/header.php'); ?>
 
 <section class="artist-profile">
-	<h2>Luke De-Sciscio</h2>
+	<h2><?php echo $artist["name"];?></h2>
 
 	<div class="artist-image-container">
-		<img src="img/luke.jpg">
+		<img src="<?php echo $artist["image"]; ?>">
 	</div>
-	<p>Lorizzle ipsizzle dolor check out this amizzle, consectetuer adipiscing elit. That's the shizzle that's the shizzle velit, for sure volutpizzle, suscipit ma nizzle, gravida vizzle, shiz. Pellentesque own yo' gangster. Sed erizzle. Gangsta izzle dolizzle dapibizzle turpis tempizzle sure. Maurizzle pellentesque nibh gangster yippiyo. Vestibulum in tortor. Pellentesque break yo neck, yall rhoncizzle nisi. In hizzle habitasse platea dictumst. Phat dapibizzle. Curabitur tellus urna, pretizzle brizzle, mattizzle ac, eleifend fo shizzle mah nizzle fo rizzle, mah home g-dizzle, nunc. Cool suscipizzle. Integer semper velizzle sizzle bling bling.
-	Vestibulum in tortor. Pellentesque break yo neck, yall rhoncizzle nisi. In hizzle habitasse platea dictumst. Phat dapibizzle. Curabitur tellus urna, pretizzle brizzle, mattizzle ac, eleifend fo shizzle mah nizzle fo rizzle, mah home g-dizzle, nunc. Cool suscipizzle. Integer semper velizzle sizzle bling bling.</p>
+	<p><?php echo $artist["bio"]; ?></p>
 
 	<div class="artist-videos">
 		<div class="video-container">
@@ -15,7 +32,7 @@
 		</div>
 	
 		<div class="video-container">
-			<iframe width="360" height="203" src="//www.youtube.com/embed/18GyHzYQoss" frameborder="0" allowfullscreen></iframe>
+			<iframe width="360" height="203" src="//www.youtube.com/embed/tsEYEYplVjc" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 
@@ -28,6 +45,9 @@
 	</div>
 </section>
 
+<pre>
+<?php var_dump($artist_data); ?>
+</pre>
 
 
 <?php include('inc/footer.php'); ?>
