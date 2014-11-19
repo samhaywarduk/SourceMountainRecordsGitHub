@@ -1,5 +1,8 @@
 
 <?php include('inc/header.php'); ?>
+	
+	<?php include('inc/partials/back-home.html.php'); ?>
+
 	<h2>Lorizzle ipsizzle dolor check out this amizzle, consectetuer adipiscing elit. That's the shizzle that's the shizzle velit, for sure volutpizzle.</h2>
 
 	<section class="oFloAuto">

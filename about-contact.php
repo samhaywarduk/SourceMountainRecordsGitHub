@@ -1,5 +1,7 @@
 <?php include("inc/header.php"); ?>
 
+	<?php include('inc/partials/back-home.html.php'); ?>
+
 	<div class="about">
 		<h2>Lorizzle ipsizzle dolor check out this amizzle, consectetuer adipiscing elit. That's the shizzle that's the shizzle velit, for sure volutpizzle, suscipit ma nizzle, gravida vizzle, shiz. Pellentesque own yo' gangster. Sed erizzle.</h2>
 	

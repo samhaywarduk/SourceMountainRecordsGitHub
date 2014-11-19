@@ -3,9 +3,7 @@ include('inc/header.php');
 include('inc/news-data.php');
 ?>
 
-<span class="go-back">
-	<a href="index.php">Home</a>
-</span>
+<?php include('inc/partials/back-home.html.php'); ?>
 
 <section class="news oFloAuto">
 		<h2>News!</h2>
