@@ -157,7 +157,7 @@
 				// process the rest of the words
 				} else {
 					// add read more link in the very end
-					if (words[i+1] == null){ new_sentence += '...<a href="#" class="see_full">&raquo; See full</a>';
+					if (words[i+1] == null){ new_sentence += '...';
 					}
 				} 		
 			} 

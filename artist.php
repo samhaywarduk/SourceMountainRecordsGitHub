@@ -16,7 +16,11 @@ if (!isset($artist)) {
 
 
 
- <?php include('inc/header.php'); ?>
+<?php include('inc/header.php'); ?>
+
+<span class="go-back">
+	<a href="artists.php">Back to artists</a>
+</span>
 
 <section class="artist-profile">
 	<h2><?php echo $artist["name"];?></h2>

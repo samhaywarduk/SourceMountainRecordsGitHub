@@ -272,3 +272,15 @@ footer{
 .see_full{
 	text-decoration: underline;
 }
+
+
+/*****************************************
+		PAGE:NEWS-ITEM
+******************************************/
+
+.go-back a{
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding-left: 26px;
+	background-image: url('../img/back-arrow.png');
+}

@@ -1,5 +1,9 @@
 <?php include('inc/header.php'); ?>
 
+	<span class="go-back">
+		<a href="index.php">Home</a>
+	</span>
+
 	<section class="oFloAuto">
 
 		<ul class="artists clear">
