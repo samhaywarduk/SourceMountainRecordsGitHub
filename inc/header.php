@@ -23,10 +23,10 @@
 						<ul>
 							<li><a href="index.php">Home</a></li>
 							<li><a href="artists.php">Artists &amp; Music</a></li>
-							<li><a href="index.php">News</a></li>
+							<li><a href="news.php">News</a></li>
 							<li><a href="index.php">Reviews</a></li>
 							<li><a href="gallery.php">Gallery</a></li>
-							<li><a href="index.php">About &#47; Contact</a></li>
+							<li><a href="about-contact.php">About &#47; Contact</a></li>
 						</ul>
 					</nav>
 	
@@ -38,10 +38,10 @@
 						<ul>
 							<li><a href="index.php">Home</a></li>
 							<li><a href="artists.php">Artists &amp; Music</a></li>
-							<li><a href="index.php">News</a></li>
+							<li><a href="news.php">News</a></li>
 							<li><a href="index.php">Reviews</a></li>
 							<li><a href="gallery.php">Gallery</a></li>
-							<li><a href="index.php">About &#47; Contact</a></li>
+							<li><a href="about-contact.php">About &#47; Contact</a></li>
 						</ul>
 					</nav>
 					<div class="social-main">
@@ -50,4 +50,4 @@
 				</div>
 			</header>
 
-			<section class="main-content">
+			<section class="main-content clear">

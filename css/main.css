@@ -27,7 +27,9 @@ body{
 }
 
 *{ 
-	box-sizing:border-box;	
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
 
 img{
@@ -235,4 +237,38 @@ footer{
 .artist-videos,
 .artist-soundClouds{
 	margin-bottom: 5%;
+}
+
+/*****************************************
+		PAGE:ABOUT/CONTACT
+******************************************/
+.contact li{
+	margin-bottom: 10px;
+	min-height: 20px;
+}
+
+.contact a{
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding-left: 30px;
+}
+
+.contact .phone a{
+	background-image: url('../img/phone.png');
+}
+
+.contact .mail a{
+	background-image: url('../img/mail.png');
+}
+
+.contact .facebook a{
+	background-image: url('../img/facebook-grey.png');
+}
+
+/*****************************************
+		PAGE:NEWS
+******************************************/
+
+.see_full{
+	text-decoration: underline;
 }

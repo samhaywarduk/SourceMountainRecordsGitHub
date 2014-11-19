@@ -128,6 +128,21 @@
 		margin-bottom: 2%;
 	}
 
+	/*****************************************
+		PAGE:ABOUT/CONTACT
+	******************************************/
+
+	.about{
+		float:left;
+		width:56%;
+
+	}
+
+	.contact{
+		float: left;
+		width: 39%;
+		margin-left: 5%;
+	}
 
 }
 

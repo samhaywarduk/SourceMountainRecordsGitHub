@@ -1,5 +1,8 @@
 
-<?php include('inc/header.php'); ?>
+<?php
+ include('inc/header.php');
+ include('inc/news-items.php')
+ ?>
 
 	<h1>Source Mountain Records</h1>
 	<h2>Check out our latest!</h2>
@@ -10,22 +13,20 @@
 	<section class="news oFloAuto">
 		<h2>News!</h2>
 			<div class = "news-item">
-				<h3>News title 1</h3>
-				<p>Lorizzle ipsizzle dolor check out this amizzle, consectetuer adipiscing elit. That's the shizzle that's the shizzle velit, for sure volutpizzle, suscipit ma nizzle, gravida vizzle, shiz. Pellentesque own yo' gangster. Sed erizzle. Gangsta izzle dolizzle dapibizzle turpis tempizzle sure. Maurizzle pellentesque nibh gangster yippiyo. Vestibulum in tortor. Pellentesque break yo neck, yall rhoncizzle nisi. In hizzle habitasse platea dictumst. Phat dapibizzle. Curabitur tellus urna, pretizzle brizzle, mattizzle ac, eleifend fo shizzle mah nizzle fo rizzle, mah home g-dizzle, nunc. Cool suscipizzle. Integer semper velizzle sizzle bling bling.</p>
+				<h3><?php echo $news_items[108]["title"]; ?></h3>
+				<p class = "excerpt"><?php echo $news_items[108]["text"]; ?></p>
 				<hr>
 			</div>
 			<div class = "news-item">
-				<h3>News title 2</h3>
-				<p>Lorizzle ipsizzle dolor check out this amizzle, consectetuer adipiscing elit. That's the shizzle that's the shizzle velit, for sure volutpizzle, suscipit ma nizzle, gravida vizzle, shiz. Pellentesque own yo' gangster. Sed erizzle. Gangsta izzle dolizzle dapibizzle turpis tempizzle sure. Maurizzle pellentesque nibh gangster yippiyo. Vestibulum in tortor. Pellentesque break yo neck, yall rhoncizzle nisi. In hizzle habitasse platea dictumst. Phat dapibizzle. Curabitur tellus urna, pretizzle brizzle, mattizzle ac, eleifend fo shizzle mah nizzle fo rizzle, mah home g-dizzle, nunc. Cool suscipizzle. Integer semper velizzle sizzle bling bling.</p>
+				<h3><?php echo $news_items[107]["title"]; ?></h3>
+				<p class = "excerpt"><?php echo $news_items[107]["text"]; ?></p>
 				<hr>
 			</div>
 			<div class = "news-item">
-				<h3>News title 3</h3>
-				<p>Lorizzle ipsizzle dolor check out this amizzle, consectetuer adipiscing elit. That's the shizzle that's the shizzle velit, for sure volutpizzle, suscipit ma nizzle, gravida vizzle, shiz. Pellentesque own yo' gangster. Sed erizzle. Gangsta izzle dolizzle dapibizzle turpis tempizzle sure. Maurizzle pellentesque nibh gangster yippiyo. Vestibulum in tortor. Pellentesque break yo neck, yall rhoncizzle nisi. In hizzle habitasse platea dictumst. Phat dapibizzle. Curabitur tellus urna, pretizzle brizzle, mattizzle ac, eleifend fo shizzle mah nizzle fo rizzle, mah home g-dizzle, nunc. Cool suscipizzle. Integer semper velizzle sizzle bling bling.</p>
+				<h3><?php echo $news_items[106]["title"]; ?></h3>
+				<p class = "excerpt"><?php echo $news_items[106]["text"]; ?></p>
 				<hr>
 			</div>
-
-		
 	</section>
 
 
