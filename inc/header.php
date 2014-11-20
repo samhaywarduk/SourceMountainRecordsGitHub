@@ -24,7 +24,6 @@
 							<li><a href="index.php">Home</a></li>
 							<li><a href="artists.php">Artists &amp; Music</a></li>
 							<li><a href="news.php">News</a></li>
-							<li><a href="index.php">Reviews</a></li>
 							<li><a href="gallery.php">Gallery</a></li>
 							<li><a href="about-contact.php">About &#47; Contact</a></li>
 						</ul>
@@ -36,12 +35,11 @@
 					
 					<nav class="main-nav">
 						<ul>
-							<li><a href="index.php">Home</a></li>
-							<li><a href="artists.php">Artists &amp; Music</a></li>
-							<li><a href="news.php">News</a></li>
-							<li><a href="index.php">Reviews</a></li>
-							<li><a href="gallery.php">Gallery</a></li>
-							<li><a href="about-contact.php">About &#47; Contact</a></li>
+							<li <?php if ($selectedSection == "home") { echo 'class = "selected"';} ?> ><a href="index.php">Home</a></li>
+							<li <?php if ($selectedSection == "artists") { echo 'class = "selected"';} ?> ><a href="artists.php">Artists &amp; Music</a></li>
+							<li <?php if ($selectedSection == "news") { echo 'class = "selected"';} ?> ><a href="news.php">News</a></li>
+							<li <?php if ($selectedSection == "gallery") { echo 'class = "selected"';} ?> ><a href="gallery.php">Gallery</a></li>
+							<li <?php if ($selectedSection == "about") { echo 'class = "selected"';} ?> ><a href="about-contact.php">About &#47; Contact</a></li>
 						</ul>
 					</nav>
 					<div class="social-main">

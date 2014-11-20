@@ -1,3 +1,7 @@
+<?php
+$selectedSection = "about";
+?>
+
 <?php include("inc/header.php"); ?>
 
 	<?php include('inc/partials/back-home.html.php'); ?>

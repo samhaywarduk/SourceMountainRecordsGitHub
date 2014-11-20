@@ -122,21 +122,21 @@
 
 		//$('.soundCloudSample').hide(); **************UNCOMMENT THIS LATER***************************
 
-		$('.speaker-icon').click(function(){  //when speaker icon is clicked
-			var timeOut;
-			var $speakerImage;
-			var associatedSoundCloud;
+		// $('.speaker-icon').click(function(){  //when speaker icon is clicked
+		// 	var timeOut;
+		// 	var $speakerImage;
+		// 	var associatedSoundCloud;
 			
-			event.preventDefault();  //prevent clicking the speaker from folling the link its nested in
-			$speakerImage = $(this);  //store a reference to the actual clicked button	
-			$speakerImage.attr("src", "img/speaker-sound-invert.png")  // change the image's src attribute to the other speaker image
+		// 	event.preventDefault();  //prevent clicking the speaker from folling the link its nested in
+		// 	$speakerImage = $(this);  //store a reference to the actual clicked button	
+		// 	$speakerImage.attr("src", "img/speaker-sound-invert.png")  // change the image's src attribute to the other speaker image
 
-			timeOut = setTimeout(function(){  //this all changes the image back after 1000 miliseconds
-			$speakerImage.attr("src", "img/speaker-sound.png")
-			}, 1000);
+		// 	timeOut = setTimeout(function(){  //this all changes the image back after 1000 miliseconds
+		// 	$speakerImage.attr("src", "img/speaker-sound.png")
+		// 	}, 1000);
 
-			$speakerImage.parent().parent().next().slideToggle('slow');
-		});
+		// 	$speakerImage.parent().parent().next().slideToggle('slow');
+		// });
 
 
 
@@ -179,6 +179,50 @@
 				$(this).children('span').hide();
 			});
 		});
+
+
+		//*******************************
+		//		STICKY NAV MENU
+		//*******************************
+
+		// Create a clone of the menu, right next to original.
+		$('.main-nav').addClass('original').clone().insertAfter('.main-nav').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+
+		scrollIntervalID = setInterval(stickIt, 10);
+
+
+		function stickIt() {
+
+			if(getWidth() < 768){
+
+				$('.cloned').hide();
+
+			} else {
+
+			  var orgElementPos = $('.original').offset();
+			  orgElementTop = orgElementPos.top;               
+
+			  if ($(window).scrollTop() >= (orgElementTop)) {
+			    // scrolled past the original position; now only show the cloned, sticky element.
+
+				   // Cloned element should always have same left position and width as original element.     
+				   orgElement = $('.original');
+				   coordsOrgElement = orgElement.offset();
+				   leftOrgElement = coordsOrgElement.left;  
+				   widthOrgElement = orgElement.css('width');
+
+				   $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement+'px').show();
+				   $('.original').css('visibility','hidden');
+				} else {
+				   // not scrolled past the menu; only show the original menu.
+				   $('.cloned').hide();
+				   $('.original').css('visibility','visible');
+				}
+			}
+		}
+
+
+
 		
 
 	</script>

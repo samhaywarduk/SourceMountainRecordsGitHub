@@ -170,6 +170,10 @@ footer{
 	font-style: italic;
 }
 
+.image-gallery img:hover{
+	opacity: 0.7;
+}
+
 .overlay {
  	background:rgba(0,0,0,0.7);
  	width:100%;
@@ -197,7 +201,7 @@ footer{
 
 .artists{
 	width: 75%;
-	margin: 3% auto 0;
+	margin: 0 auto;
 }
 
 .artists li{
@@ -209,11 +213,8 @@ footer{
 	position:relative;
 }
 
-.speaker-icon{
-	position: absolute;
-	width:40px;
-	bottom:2%;
-	left:1%;
+.artist-image img:hover{
+	opacity: 0.7;
 }
 
 
@@ -273,6 +274,12 @@ footer{
 	text-decoration: underline;
 }
 
+.news-item{
+	background-color: #292929;
+	margin-bottom: 4%;
+	padding: 1px 2% 2%;
+		
+}
 
 /*****************************************
 		PAGE:NEWS-ITEM
@@ -284,5 +291,6 @@ footer{
 	background-repeat: no-repeat;
 	background-size: 20px 20px;
 	padding-left: 26px;
+	margin-bottom: 4%;
 	background-image: url('../img/back-arrow.png');
 }

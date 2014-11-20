@@ -42,7 +42,7 @@
 	.main-nav a{
 		padding: 2px;
 	}
-
+	.selected a,
 	.main-nav a:hover,
 	.social-main a:hover{
 		background-color: #ddd;

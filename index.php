@@ -1,8 +1,12 @@
 
 <?php
- include('inc/header.php');
- include('inc/news-data.php')
- ?>
+$selectedSection = "home";
+
+include('inc/header.php');
+include('inc/news-data.php')
+
+ 
+?>
 
 	<h1>Source Mountain Records</h1>
 	<h2>Check out our latest!</h2>
@@ -10,25 +14,25 @@
 		<iframe width="360" height="203" src="http://www.youtube.com/embed/nm2ZX7xH_jk" frameborder="0" allowfullscreen></iframe>
 	</div>
 
-	<section class="news oFloAuto">
+	<section class="news">
 		<h2>News!</h2>
 			<div class = "news-item">
 				<h3><?php echo $news_data[108]["title"]; ?></h3>
 				<p class = "excerpt"><?php echo $news_data[108]["text"]; ?></p>
 				<a href="news-item.php?id=108" class="see_full"> &raquo; See full</a>
-				<hr>
+				
 			</div>
 			<div class = "news-item">
 				<h3><?php echo $news_data[107]["title"]; ?></h3>
 				<p class = "excerpt"><?php echo $news_data[107]["text"]; ?></p>
 				<a href="news-item.php?id=107" class="see_full"> &raquo; See full</a>
-				<hr>
+				
 			</div>
 			<div class = "news-item">
 				<h3><?php echo $news_data[106]["title"]; ?></h3>
 				<p class = "excerpt"><?php echo $news_data[106]["text"]; ?></p>
 				<a href="news-item.php?id=106" class="see_full"> &raquo; See full</a>
-				<hr>
+				
 			</div>
 	</section>
 

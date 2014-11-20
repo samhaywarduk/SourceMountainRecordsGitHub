@@ -1,3 +1,8 @@
+<?php
+$selectedSection = "artists";
+?>
+
+
  <?php
  include("inc/artist-data.php");
 

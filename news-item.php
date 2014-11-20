@@ -1,4 +1,9 @@
 <?php
+$selectedSection = "news";
+?>
+
+
+<?php
 include('inc/header.php');
 include('inc/news-data.php');
 
@@ -21,7 +26,7 @@ if (!isset($news_item)) {
 </span>
 
 
-<section class="news oFloAuto">
+<section class="news">
 	<div class = "news-item">
 		<h3><?php echo $news_item["title"]; ?></h3>
 		<p><?php echo $news_item["text"]; ?></p>
@@ -46,7 +51,6 @@ if (!isset($news_item)) {
 
 		?>
 		</div>
-		<hr>
 	</div>
 </section>
 

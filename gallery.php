@@ -1,3 +1,6 @@
+<?php
+$selectedSection = "gallery";
+?>
 
 <?php include('inc/header.php'); ?>
 	
