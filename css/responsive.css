@@ -26,6 +26,7 @@
 		position: absolute; /*Following rules position the nav in the bottom right*/
 		bottom: 0;
 		right: 4%;
+		padding: 15px 15px 0;
 		font-size: 1.125em;
 	}
 

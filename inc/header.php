@@ -14,12 +14,12 @@
 	</head>
 	<body>
 		<div class="page-wrapper">
-			<div class="menu-toggle">
+			<div class="menu-toggle"> <!-- mobile -->
 				<img src="img/toggle-menu.png">
-			</div>
+			</div>					  <!-- /mobile -->
 			<header>
 				<div class="header-content clear">
-					<nav class="mob-nav">
+					<nav class="mob-nav"> <!-- mobile -->
 						<ul>
 							<li><a href="index.php">Home</a></li>
 							<li><a href="artists.php">Artists &amp; Music</a></li>
@@ -27,7 +27,7 @@
 							<li><a href="gallery.php">Gallery</a></li>
 							<li><a href="about-contact.php">About &#47; Contact</a></li>
 						</ul>
-					</nav>
+					</nav>				  <!-- /mobile -->
 	
 					<div class="logo-container">
 						<a href="index.php"><img src="img/logo-neg.png"></a>
