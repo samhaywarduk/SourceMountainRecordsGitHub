@@ -28,7 +28,7 @@ if (!isset($artist)) {
 </span>
 
 <section class="artist-profile">
-	<h2><?php echo $artist["name"];?></h2>
+	<h1><?php echo $artist["name"];?></h1>
 
 	<div class="artist-image-container">
 		<img src="<?php echo $artist["image"]; ?>">

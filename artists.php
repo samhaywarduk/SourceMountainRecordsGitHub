@@ -13,7 +13,7 @@ $selectedSection = "artists";
 			<div class="artist-image">
 				<a href="artist.php?id=LukeDeSciscio">
 					<h2>Luke De-Sciscio</h2>
-					<img src="img/luke.jpg">
+					<img src="img/luke-record.png">
 				</a>
 			</div>
 			<div class="soundCloudSample">
@@ -24,7 +24,7 @@ $selectedSection = "artists";
 			<div class="artist-image">
 				<a href="artist.php?id=SiennaChorus">
 					<h2>Sienna Chorus</h2>
-					<img src="img/sienna.png">
+					<img src="img/sienna-record.png">
 				</a>
 			</div>
 			<div class="soundCloudSample">
@@ -35,7 +35,7 @@ $selectedSection = "artists";
 			<div class="artist-image">
 				<a href="artist.php?id=Rhain">
 					<h2>RHAIN</h2>
-					<img src="http://lorempixel.com/640/640/nightlife/">
+					<img src="img/placeholder-record.png">
 				</a>
 			</div>
 			<div class="soundCloudSample">
@@ -46,7 +46,7 @@ $selectedSection = "artists";
 			<div class="artist-image">
 				<a href="artist.php">
 					<h2>Randomer</h2>
-					<img src="http://lorempixel.com/640/640/nightlife/">
+					<img src="img/placeholder-record.png">
 				</a>
 			</div>
 			<div class="soundCloudSample">

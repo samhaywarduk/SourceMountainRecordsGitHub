@@ -43,7 +43,8 @@
 						</ul>
 					</nav>
 					<div class="social-main">
-						<p>Join us on <a href="https://www.facebook.com/sourcemountainrecords">Facebook</a> and <a href="https://soundcloud.com/source-mountain-records">SoundCloud!</a></p>
+						<p><a href="https://www.facebook.com/sourcemountainrecords"><img class="social-icon" src="img/facebook.png" alt="Facebook icon"></a>
+				<a href="https://soundcloud.com/source-mountain-records"><img class="social-icon" src="img/soundcloud.png" alt="Soundcloud icon"></a></p>
 					</div>
 				</div>
 			</header>

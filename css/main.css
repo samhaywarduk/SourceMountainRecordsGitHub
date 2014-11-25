@@ -210,7 +210,9 @@ footer{
 }
 
 .artist-image{
-	position:relative;
+	padding-top: 0.1px;
+	background-color:#292929;
+
 }
 
 .artist-image img:hover{
@@ -225,6 +227,7 @@ footer{
 .artist-profile{
 	width:75%;
 	margin: 3% auto 0;
+
 }
 
 .artist-profile h2{
@@ -233,6 +236,10 @@ footer{
 
 .artist-image-container{
 	max-width: 500px;
+}
+
+.artist-image-container img{
+	border-radius: 100%;
 }
 
 .artist-videos,

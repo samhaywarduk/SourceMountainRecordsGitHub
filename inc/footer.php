@@ -182,7 +182,7 @@
 
 
 		//*******************************
-		//		STICKY NAV MENU
+		//		STICKY NAV MENU 
 		//*******************************
 
 		// Create a clone of the menu, right next to original.
@@ -205,9 +205,14 @@
 
 			if(getWidth() < 768){
 
-				$('.cloned').hide();
+				//$cloned = '$(.mob-clone') 
+				//$original = $('.mob-original')
+				//$cloned .show()
+
+				$('.cloned').hide(); //hide desktop
 
 			} else {
+
 
 			  var orgElementPos = $('.original').offset();
 			  orgElementTop = orgElementPos.top;               
