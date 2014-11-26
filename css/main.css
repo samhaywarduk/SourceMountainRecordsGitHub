@@ -139,6 +139,18 @@ footer{
 	margin-top: 0;
 }
 
+.latest{
+	background-color: #292929;
+	padding: 0.1px 2% 2%;
+	overflow: hidden;
+	margin-bottom: 4%;
+}
+
+.news{
+	padding:2%;
+	background-color: #292929;
+}
+
 .video-container iframe{
 	display:block; /*center the youtube video*/
 	margin: 0 auto;
@@ -158,16 +170,25 @@ footer{
 	margin: 3% auto 0;
 }
 
+.image-gallery ul{
+	margin: 0 auto;
+}
+
 .image-gallery li{
-	margin-bottom: 12%;
+	/*margin-bottom: 12%;*/
 	background-color: #292929;
 }
 
 .image-gallery p{
-	padding: 3%;
+	display: none;
+	/*padding: 3%;
 	margin: 0;
 	font-size: 0.9em;
-	font-style: italic;
+	font-style: italic;*/
+}
+
+.image-gallery img{
+	display: block;
 }
 
 .image-gallery img:hover{
@@ -230,8 +251,19 @@ footer{
 
 }
 
-.artist-profile h2{
+.artist-profile .banner{
+	display: table;
+	width:100%;
+	height:130px;
+	margin-bottom: 5%;
 	text-align: center;
+	background-color: #292929;
+
+}
+
+.artist-profile h1{
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .artist-image-container{
@@ -242,14 +274,31 @@ footer{
 	border-radius: 100%;
 }
 
+.artist-profile p{
+	background-color: #292929;
+	padding: 2%;
+}
+
 .artist-videos,
 .artist-soundClouds{
 	margin-bottom: 5%;
 }
 
+.artist-videos{
+	padding: 2%;
+	background-color: #292929;
+	overflow: hidden;
+}
+
+
 /*****************************************
 		PAGE:ABOUT/CONTACT
 ******************************************/
+.about-contact{
+	padding: 2%;
+	background-color: #292929;
+}
+
 .contact li{
 	margin-bottom: 10px;
 	min-height: 20px;
@@ -282,7 +331,7 @@ footer{
 }
 
 .news-item{
-	background-color: #292929;
+	background-color: #555;
 	margin-bottom: 4%;
 	padding: 1px 2% 2%;
 		
@@ -291,7 +340,6 @@ footer{
 /*****************************************
 		PAGE:NEWS-ITEM
 ******************************************/
-
 
 .go-back a{
 	display: block;

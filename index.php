@@ -9,11 +9,13 @@ include('inc/news-data.php')
 ?>
 
 	<h1>Source Mountain Records</h1>
-	<h2>Check out our latest!</h2>
-	<div class="video-container">
-		<iframe width="360" height="203" src="http://www.youtube.com/embed/nm2ZX7xH_jk" frameborder="0" allowfullscreen></iframe>
-	</div>
 
+	<div class="latest">
+		<h2>Check out our latest!</h2>
+		<div class="video-container">
+			<iframe width="360" height="203" src="http://www.youtube.com/embed/nm2ZX7xH_jk" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
 	<section class="news">
 		<h2>News!</h2>
 			<div class = "news-item">
