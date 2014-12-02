@@ -13,7 +13,7 @@ include('inc/news-data.php')
 	<div class="latest">
 		<h2>Check out our latest!</h2>
 		<div class="video-container">
-			<iframe width="360" height="203" src="http://www.youtube.com/embed/nm2ZX7xH_jk" frameborder="0" allowfullscreen></iframe>
+			<iframe width="360" height="203" src="http://www.youtube.com/embed/tsEYEYplVjc" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 	<section class="news">

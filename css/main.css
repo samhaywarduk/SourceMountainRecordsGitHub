@@ -63,6 +63,10 @@ p{
 
 header{
 padding: 1% 15px 2%;
+background-image: url("../img/light_through_trees_750.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 }
 
 .menu-toggle{
@@ -104,6 +108,10 @@ padding: 1% 15px 2%;
 
 .main-nav{
 	display:none; /*hide non-mobile nav*/
+}
+
+.animateme{
+	opacity:0;
 }
 
 .logo-container{

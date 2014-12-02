@@ -4,13 +4,19 @@
 	
 	/* Page Styles
 	================================ */
-	
 
 	/* Header, footer and banner
 	================================ */
 
 	header{
 		background-color:#292929;
+		background-image: url("../img/light_through_trees_974.jpg");
+	}
+
+	.header-wrapper-for-animation{
+		position: absolute;
+		width: 100%;
+		padding-bottom: 250px;
 	}
 
 	.header-content{
@@ -28,6 +34,8 @@
 		right: 4%;
 		padding: 15px 15px 0;
 		font-size: 1.125em;
+		
+
 	}
 
 	.main-nav ul{
@@ -152,6 +160,10 @@
 
 	/* Header, footer and banner
 	================================ */
+
+	header{
+		background-image: url("../img/light_through_trees_1280.jpg");
+	}
 
 	.header-content,
 	.main-content{

@@ -9,6 +9,7 @@
 		</div>
 	</body>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/scrollme-master/jquery.scrollme.min.js"></script>
 	<script>
 
 	//*******************************
@@ -185,8 +186,50 @@
 		//		STICKY NAV MENU 
 		//*******************************
 
+		//create space for the header
+
+		  var $headerSpaceHolder = $('<div class ="header-space-holder"></div>');
+				$headerSpaceHolder.insertAfter('.header-wrapper-for-animation');
+				$headerSpaceHolder.height($("header").innerHeight());
+
+				$(window).resize(function(){
+
+				 	if(getWidth() >= 768){
+
+				 		$headerSpaceHolder.css('width', $('header').innerWidth() + 'px');
+				 		$headerSpaceHolder.css('height', $('header').innerHeight() + 'px');
+				 	}
+
+
+				});
+
+		// media query change function
+		// function WidthChange(mQuery768) {
+
+		// 	if (mQuery768.matches) {
+		// 		// window width is at least 768px
+		// 		$headerSpaceHolder.css('width', $('header').innerWidth() + 'px');
+		// 		$headerSpaceHolder.css('height', $('header').innerHeight() + 'px');
+		// 	}
+		// }
+
+		//  // media query event handler
+		// if (matchMedia) {
+		// 	var mQuery768 = window.matchMedia("(min-width: 768px)");
+		// 	mQuery768.addListener(WidthChange);
+		// 	WidthChange(mQuery768);
+		// }
+
+		
+
 		// Create a clone of the menu, right next to original.
-		$('.main-nav').addClass('original').clone().insertAfter('.main-nav').addClass('cloned')
+
+		  $('.main-nav').addClass('original')
+
+		  $navClone1 = $('.main-nav').clone().removeClass('original');
+		  $navClone2 = $('.main-nav').clone().removeClass('original');
+
+		  $navClone1.insertAfter('.main-nav').addClass('cloned')
 			.css('position','fixed')
 			.css('top','0')
 			.css('padding-top','15px')
@@ -196,7 +239,24 @@
 			.css('background-color', '#292929')
 			.css('border-bottom-left-radius','10px')
 			.css('border-bottom-right-radius','10px')
-			.removeClass('original').hide();
+			.hide();
+
+			$('.cloned').addClass('animateme');
+
+			// $('.cloned').addClass('animateme').data({
+			//  						  "when" : "exit",
+			//  						  "from" : "0.8",
+			//  						  "to" : "1",
+			//  						  "opacity" : "0"
+			//  						  });
+
+
+			$navClone2.insertAfter('.cloned').addClass('second-clone')
+				.css('position','fixed')
+				.css('top','0')
+				.css('margin-top','0')
+				.css('z-index','600')
+
 
 		scrollIntervalID = setInterval(stickIt, 10);
 
@@ -210,9 +270,9 @@
 				//$cloned .show()
 
 				$('.cloned').hide(); //hide desktop
+				$('.second-clone').hide();
 
 			} else {
-
 
 			  var orgElementPos = $('.original').offset();
 			  orgElementTop = orgElementPos.top;               
@@ -224,13 +284,15 @@
 				   orgElement = $('.original');
 				   coordsOrgElement = orgElement.offset();
 				   leftOrgElement = coordsOrgElement.left;  
-				   widthOrgElement = orgElement.css('width');
+				   widthOrgElement = orgElement.width();
 
-				   $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement+'px').css('bottom','initial').show();
+				   $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',(widthOrgElement + 35) +'px').css('bottom','initial').show();
+				   $('.second-clone').css('left',leftOrgElement+'px').css('top',0).css('width',(widthOrgElement + 35) +'px').css('bottom','initial').show();
 				   $('.original').css('visibility','hidden');
 				} else {
 				   // not scrolled past the menu; only show the original menu.
 				   $('.cloned').hide();
+				   $('.second-clone').hide();
 				   $('.original').css('visibility','visible');
 				}
 			}
