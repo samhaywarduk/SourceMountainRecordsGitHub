@@ -11,47 +11,18 @@ include('inc/news-data.php');
 
 <section class="news">
 		<h2>News!</h2>
+
+		<?php foreach ($news_data as $news_id => $news_item) { ?>
+
 			<div class = "news-item">
-				<h3><?php echo $news_data[108]["title"]; ?></h3>
-				<p class = "excerpt"><?php echo $news_data[108]["text"]; ?></p>
-				<a href="news-item.php?id=108" class="see_full"> &raquo; See full</a>
+				<h3><?php echo $news_item["title"]; ?></h3>
+				<p class = "excerpt"><?php echo $news_item["text"]; ?></p>
+				<a href="news-item.php?id=<?php echo $news_id; ?>" class="see_full"> &raquo; See full</a>
 			</div>
-			<div class = "news-item">
-				<h3><?php echo $news_data[107]["title"]; ?></h3>
-				<p class = "excerpt"><?php echo $news_data[107]["text"]; ?></p>
-				<a href="news-item.php?id=107" class="see_full"> &raquo; See full</a>
-			</div>
-			<div class = "news-item">
-				<h3><?php echo $news_data[106]["title"]; ?></h3>
-				<p class = "excerpt"><?php echo $news_data[106]["text"]; ?></p>
-				<a href="news-item.php?id=106" class="see_full"> &raquo; See full</a>
-			</div>
-			<div class = "news-item">
-				<h3><?php echo $news_data[105]["title"]; ?></h3>
-				<p class = "excerpt"><?php echo $news_data[105]["text"]; ?></p>
-				<a href="news-item.php?id=105" class="see_full"> &raquo; See full</a>
-			</div>
-			<div class = "news-item">
-				<h3><?php echo $news_data[104]["title"]; ?></h3>
-				<p class = "excerpt"><?php echo $news_data[104]["text"]; ?></p>
-				<a href="news-item.php?id=104" class="see_full"> &raquo; See full</a>
-			</div>
-			<div class = "news-item">
-				<h3><?php echo $news_data[103]["title"]; ?></h3>
-				<p class = "excerpt"><?php echo $news_data[103]["text"]; ?></p>
-				<a href="news-item.php?id=103" class="see_full"> &raquo; See full</a>
-			</div>
-			<div class = "news-item">
-				<h3><?php echo $news_data[102]["title"]; ?></h3>
-				<p class = "excerpt"><?php echo $news_data[102]["text"]; ?></p>
-				<a href="news-item.php?id=102" class="see_full"> &raquo; See full</a>
-			</div>
-			<div class = "news-item">
-				<h3><?php echo $news_data[101]["title"]; ?></h3>
-				<p class = "excerpt"><?php echo $news_data[101]["text"]; ?></p>
-				<a href="news-item.php?id=101" class="see_full"> &raquo; See full</a>
-				
-			</div>
+			
+		<?php } ?>
+
+			
 	</section>
 				
 <?php include('inc/footer.php'); ?>

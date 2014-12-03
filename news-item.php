@@ -34,22 +34,22 @@ if (!isset($news_item)) {
 		<?php 
 
 		if (isset($news_item["video"])){  //if there are any videos in this news item
-			foreach($news_item["video"] as $video){  // loop through them and display them
-				echo '<div class="video-container">';
-						echo $video; 
-				echo '</div>';
-			}
-		}
+			foreach($news_item["video"] as $video){ ?> <!-- // loop through them and display them -->
+				<div class="video-container">
+					<?php echo $video; ?>
+				</div>
+	  <?php } 
+		} ?>
 
+	  <?php
 		if (isset($news_item["soundCloud"])){
-			foreach($news_item["soundCloud"] as $soundCloud){  // loop through them and display them
-				echo '<div class="artist-soundClouds">';
-						echo $soundCloud; 
-				echo '</div>';
-			}
-		}
+			foreach($news_item["soundCloud"] as $soundCloud){ ?>  <!-- // loop through them and display them -->
+				<div class="artist-soundClouds">
+					<?php echo $soundCloud; ?>
+				</div>
+	  <?php }
+		} ?>
 
-		?>
 		</div>
 	</div>
 </section>

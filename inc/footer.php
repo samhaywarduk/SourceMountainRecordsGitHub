@@ -8,6 +8,9 @@
 			</footer>
 		</div>
 	</body>
+	<noscript>
+		<meta http-equiv="refresh" content="0; URL=noscript.php" />
+	</noscript>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/scrollme-master/jquery.scrollme.min.js"></script>
 	<script>
@@ -121,7 +124,7 @@
 		//		 SPEAKER ICON AND SAMPLE
 		//*******************************
 
-		//$('.soundCloudSample').hide(); **************UNCOMMENT THIS LATER***************************
+		//$('.soundCloudSample').hide();
 
 		// $('.speaker-icon').click(function(){  //when speaker icon is clicked
 		// 	var timeOut;
@@ -186,22 +189,30 @@
 		//		STICKY NAV MENU 
 		//*******************************
 
-		//create space for the header
+		//create div that will provide space for the header that's positioned absolute
 
 		  var $headerSpaceHolder = $('<div class ="header-space-holder"></div>');
 				$headerSpaceHolder.insertAfter('.header-wrapper-for-animation');
-				$headerSpaceHolder.height($("header").innerHeight());
-
-				$(window).resize(function(){
-
-				 	if(getWidth() >= 768){
-
-				 		$headerSpaceHolder.css('width', $('header').innerWidth() + 'px');
-				 		$headerSpaceHolder.css('height', $('header').innerHeight() + 'px');
-				 	}
+				
 
 
-				});
+			function resizeHeaderSpaceHolder(){
+				if(getWidth() >= 768){
+
+							$headerSpaceHolder.css('width', $('header').innerWidth() + 'px');
+							$headerSpaceHolder.css('height', $('header').innerHeight() + 'px');
+ 		
+				}
+			}
+
+			resizeHeaderSpaceHolder(); //execute on load
+
+			$(window).resize(resizeHeaderSpaceHolder);	//execute on window size change
+
+			setTimeout(resizeHeaderSpaceHolder, 1500);
+			setTimeout(resizeHeaderSpaceHolder, 3500);
+
+			
 
 		// media query change function
 		// function WidthChange(mQuery768) {
@@ -298,5 +309,6 @@
 			}
 		}
 
+		
 	</script>
 </html>

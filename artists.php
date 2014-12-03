@@ -2,60 +2,34 @@
 $selectedSection = "artists";
 ?>
 
-<?php include('inc/header.php'); ?>
+<?php
+	include('inc/header.php');
+	include('inc/artist-data.php');
+?>
 
 <?php include('inc/partials/back-home.html.php'); ?>
 
 <section class="oFloAuto">
 
 	<ul class="artists clear">
+
+		<?php foreach ($artist_data as $artist_id => $artist) { ?>
+
 		<li class="oFloAuto">
 			<div class="artist-image">
-				<a href="artist.php?id=LukeDeSciscio">
-					<h2>Luke De-Sciscio</h2>
-					<img src="img/luke-record.png">
+				<a href="artist.php?id=<?php echo $artist_id; ?>">
+					<h2><?php echo $artist['name']; ?></h2>
+					<img src="<?php echo $artist['artistsPageImage']; ?>">
 				</a>
 			</div>
 			<div class="soundCloudSample">
-				<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/160983442&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				<?php echo $artist['soundCloud'][0]; ?>
 			</div>
 		</li>
-		<li class="oFloAuto">
-			<div class="artist-image">
-				<a href="artist.php?id=SiennaChorus">
-					<h2>Sienna Chorus</h2>
-					<img src="img/sienna-record.png">
-				</a>
-			</div>
-			<div class="soundCloudSample">
-				<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/170151976&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-			</div>
-		</li>
-		<li class="oFloAuto">
-			<div class="artist-image">
-				<a href="artist.php?id=Rhain">
-					<h2>RHAIN</h2>
-					<img src="img/placeholder-record.png">
-				</a>
-			</div>
-			<div class="soundCloudSample">
-				<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89352398&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-			</div>
-		</li>
-		<li class="oFloAuto">
-			<div class="artist-image">
-				<a href="artist.php">
-					<h2>Randomer</h2>
-					<img src="img/placeholder-record.png">
-				</a>
-			</div>
-			<div class="soundCloudSample">
-				<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89352398&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-			</div>
-		</li>
+			
+		<?php } ?>
+
 	</ul>
-
-
 
 </section>
 
