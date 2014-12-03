@@ -19,6 +19,10 @@
 		padding-bottom: 250px;
 	}
 
+	.header-space-holder{
+		display: block;
+	}
+
 	.header-content{
 		position:relative; /*for absolute positioning of nav*/
 	}

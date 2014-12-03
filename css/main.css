@@ -23,6 +23,7 @@ body{
 }
 
 .main-content {
+	position: relative;		/*causes the padding of wrapper for animation to not have any effect on the content of the page*/
 	padding:2% 4%;
 }
 
@@ -67,6 +68,10 @@ background-image: url("../img/light_through_trees_750.jpg");
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+}
+
+.header-space-holder{
+	display: none;
 }
 
 .menu-toggle{
