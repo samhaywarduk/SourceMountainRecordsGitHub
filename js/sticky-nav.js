@@ -59,6 +59,7 @@
 
 			$(window).resize(resizeHeaderSpaceHolder);	//execute on window size change
 
+			setTimeout(resizeHeaderSpaceHolder, 500);
 			setTimeout(resizeHeaderSpaceHolder, 1500);
 			setTimeout(resizeHeaderSpaceHolder, 3500);
 			

@@ -25,6 +25,7 @@ body{
 .main-content {
 	position: relative;		/*causes the padding of wrapper for animation to not have any effect on the content of the page*/
 	padding:2% 4%;
+	background-color: #363636
 }
 
 *{ 
@@ -68,6 +69,7 @@ background-image: url("../img/light_through_trees_750.jpg");
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+position: relative;  /*for absolute positioning of mobile nav*/
 }
 
 .header-space-holder{
@@ -86,7 +88,12 @@ background-size: cover;
 
 .mob-nav{
 	padding: 5px 12%;
+	width: 100%;
 	display: none;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 500;
 }
 
 .mob-nav ul{
@@ -281,10 +288,12 @@ footer{
 
 .artist-image-container{
 	max-width: 500px;
+	text-align: center;
 }
 
 .artist-image-container img{
 	border-radius: 100%;
+	margin-bottom: 4%;
 }
 
 .artist-profile p{
@@ -301,6 +310,22 @@ footer{
 	padding: 2%;
 	background-color: #292929;
 	overflow: hidden;
+}
+
+.get-music{
+	padding: 7px;
+	background-color: #292929;
+	text-align: center;
+}
+
+.get-music a{
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.get-music img{
+	height:82px;
+
 }
 
 

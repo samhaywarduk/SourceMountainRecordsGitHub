@@ -140,11 +140,27 @@
 		margin-bottom: 2%;*/
 
 		margin: 0 auto;
+		position: relative;
 	}
+
+	.get-music{
+		width: 96px;
+		position: absolute;
+		top: 0;
+		right: -105px;
+		background-color: transparent;
+	}
+
+	.get-music a{
+		display: block;
+		margin: 0;
+	}
+	
+
 
 	/*****************************************
 		PAGE:ABOUT/CONTACT
-	******************************************/
+	*****************************************
 
 	.about{
 		float:left;

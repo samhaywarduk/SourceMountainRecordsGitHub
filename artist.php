@@ -16,8 +16,22 @@ if (!isset($artist)) {
 	header("Location: artists.php");
 	exit();
 }
-?>
 
+$artistLinks = array();
+
+if(isset($artist["links"]["soundCloud"])){
+	$artistLinks[] = "<a href=" . $artist["links"]["soundCloud"] . "> <img class = 'big-soundcloud' src='img/soundcloud-icon-large.gif'></a>";
+}
+
+if(isset($artist["links"]["bandCamp"])){
+	$artistLinks[] = "<a href=" . $artist["links"]["bandCamp"] . "> <img class = ' big-bandcamp' src='img/bandcamp-icon-large.gif'></a>";
+}
+
+if(isset($artist["links"]["spotify"])){
+	$artistLinks[] = "<a href=" . $artist["links"]["spotify"] . "> <img class = 'big-spotify' src='img/spotify-icon-large.png'></a>";
+}
+
+?>
 
 
 
@@ -34,7 +48,15 @@ if (!isset($artist)) {
 
 	<div class="artist-image-container">
 		<img src="<?php echo $artist["image"]; ?>">
+		<div class = "get-music">
+		<?php foreach ($artistLinks as $artistLink){
+			echo $artistLink;
+		} ?>
+	
+		</div>
 	</div>
+
+	
 
 	<p><?php echo $artist["bio"]; ?></p>
 
