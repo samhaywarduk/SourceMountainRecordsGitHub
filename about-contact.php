@@ -25,7 +25,7 @@ $selectedSection = "about";
 					<a href="tel:01234567891">01234567891</a>
 				</li>
 				<li class="mail"> 
-					<a href="mailto:sourcemountainrecords@gmail.com">sourcemountainrecords@gmail.com</a>
+					<a href="mailto:sourcemountainrecords@gmail.com">sourcemountainrecords<wbr>@gmail.com</a>
 				</li>
 				<li class="facebook">
 					<a href="https://www.facebook.com/sourcemountainrecords">Facebook</a>

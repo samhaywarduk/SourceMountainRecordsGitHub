@@ -30,7 +30,8 @@
 						</nav>				  <!-- /mobile -->
 		
 						<div class="logo-container">
-							<a href="index.php"><img src="img/logo-neg.png"></a>
+							<a href="index.php"><img src="img/logo2.png"></a>
+							<h2>Source Mountain Records</h2>
 						</div>
 						
 						<nav class="main-nav" data-when="span" data-from="1" data-to="0.5" data-opacity="0">

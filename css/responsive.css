@@ -10,7 +10,7 @@
 
 	header{
 		background-color:#292929;
-		background-image: url("../img/light_through_trees_974.jpg");
+		background-image: url("../img/mountain1_tablet.jpg");
 	}
 
 	.header-wrapper-for-animation{
@@ -157,10 +157,10 @@
 	}
 	
 
-
-	/*****************************************
+/*
+	****************************************
 		PAGE:ABOUT/CONTACT
-	*****************************************
+	******************************************/
 
 	.about{
 		float:left;
@@ -176,13 +176,13 @@
 
 }
 
-@media screen and (min-width:992px){  /*desktop version*/
+@media screen and (min-width:992px){  /*desktop version
 
 	/* Header, footer and banner
 	================================ */
 
 	header{
-		background-image: url("../img/light_through_trees_1280.jpg");
+		background-image: url("../img/mountain1_desktop.jpg");
 	}
 
 	.header-content,
