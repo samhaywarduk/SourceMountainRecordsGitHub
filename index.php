@@ -8,8 +8,6 @@ include('inc/news-data.php')
  
 ?>
 
-	<h1>Source Mountain Records</h1>
-
 	<div class="latest">
 		<h2>Check out our latest!</h2>
 		<div class="video-container">

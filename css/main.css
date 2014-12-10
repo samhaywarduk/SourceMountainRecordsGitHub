@@ -19,13 +19,13 @@
 body{
 	font-family: 'Raleway', sans-serif; /*default text font*/
 	color:#ddd; /*default text colour for the page*/
-	background-color:#4A6491; /*background colour for whole page*/
+	background-color:#0a090f; /*background colour for whole page*/
 }
 
 .main-content {
 	position: relative;		/*causes the padding of wrapper for animation to not have any effect on the content of the page*/
 	padding:2% 4%;
-	background-color: #1A1F2B
+	/*background-color: #1A1F2B*/
 }
 
 *{ 
@@ -70,6 +70,7 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 position: relative;  /*for absolute positioning of mobile nav*/
+border-bottom: 1px solid #D0DEFF;
 }
 
 .header-space-holder{  /*hide the space holder for mobile version*/
@@ -166,19 +167,21 @@ footer{
 }
 
 .main-content h2{ 		/*TEMPORARY****************/
-	color: black;
+	color: #fff;
 }
 
 .latest{
-	background-color: #ddd;
+	border: 2px solid #D0DEFF;
+	/*background-color: #ddd;*/
 	padding: 0.1px 2% 2%;
 	overflow: hidden;
 	margin-bottom: 4%;
 }
 
 .news{
-	padding:2%;
-	background-color: #ddd;
+	padding: 0.1px 2% 2%;
+	/*background-color: #ddd;*/
+	border: 2px solid #D0DEFF;
 }
 
 .video-container iframe{
@@ -258,16 +261,21 @@ footer{
 .artists li{
 	margin-bottom: 12%;
 	text-align: center;
+	border: 2px solid #D0DEFF;
 }
 
 .artist-image{
 	padding-top: 0.1px;
-	background-color:#292929;
+	/*background-color:#141621;*/
 
 }
 
 .artist-image img:hover{
 	opacity: 0.7;
+}
+
+.soundCloudSample iframe{
+	display: block;  /*stops the inline iframe descender taking up space at the bottom*/
 }
 
 
@@ -287,7 +295,8 @@ footer{
 	height:130px;
 	margin-bottom: 5%;
 	text-align: center;
-	background-color: #292929;
+	border: 2px solid #D0DEFF;
+	/*background-color: #141621;*/
 
 }
 
@@ -307,7 +316,8 @@ footer{
 }
 
 .artist-profile p{
-	background-color: #292929;
+	/*background-color: #292929;*/
+	border: 2px solid #D0DEFF;
 	padding: 2%;
 }
 
@@ -318,13 +328,15 @@ footer{
 
 .artist-videos{
 	padding: 2%;
-	background-color: #292929;
+	border: 2px solid #D0DEFF;
+	/*background-color: #292929;*/
 	overflow: hidden;
 }
 
 .get-music{
 	padding: 7px;
-	background-color: #292929;
+	border: 2px solid #D0DEFF;
+	/*background-color: #292929;*/
 	text-align: center;
 }
 
@@ -344,7 +356,8 @@ footer{
 ******************************************/
 .about-contact{
 	padding: 2%;
-	background-color: #292929;
+	border: 2px solid #D0DEFF;
+	/*background-color: #292929;*/
 }
 
 .contact li{
@@ -380,7 +393,9 @@ footer{
 }
 
 .news-item{
-	background-color: #555;
+	/*border-left: 1px dashed #D0DEFF;
+	border-right: 1px dashed #D0DEFF;*/
+	background-color: #141621;
 	margin-bottom: 4%;
 	padding: 1px 2% 2%;
 		
@@ -397,4 +412,8 @@ footer{
 	padding-left: 26px;
 	margin-bottom: 4%;
 	background-image: url('../img/back-arrow.png');
+}
+
+.news .full{
+	margin-top: 4%;  /*for a single full page news item, add top margin as well as the other news item styles*/
 }
