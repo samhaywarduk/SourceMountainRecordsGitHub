@@ -10,7 +10,7 @@
 
 	header{
 		background-color:#292929;
-		background-image: url("../img/mountain1_tablet.jpg");
+		background-image: url("../img/mountain4_tablet.jpg");
 	}
 
 	.header-wrapper-for-animation{
@@ -121,9 +121,9 @@
 		margin: 2.5%;
 	}
 
-	.artists li:nth-child(3n){	/*cause every third list item to clear the two items above it*/
-		clear:left;
-	}
+	/*.artists li:nth-child(3n){*/	/*cause every third list item to clear the two items above it*/
+	/*	clear:left;
+	}*/
 
 	/*****************************************
 		PAGE:ONE-ARTIST
@@ -183,7 +183,7 @@
 	================================ */
 
 	header{
-		background-image: url("../img/mountain1_desktop.jpg");
+		background-image: url("../img/mountain4_desktop.jpg");
 	}
 
 	.header-content,
@@ -234,9 +234,9 @@
 		clear:initial;
 	}
 
-	.artists li:nth-child(4n){	/*cause every fourth list item to clear the three items above it*/
-		clear:left;
-	}
+	/*.artists li:nth-child(4n){*/	/*cause every fourth list item to clear the three items above it*/
+	/*	clear:left;
+	}*/
 
 	
 
