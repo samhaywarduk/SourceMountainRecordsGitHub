@@ -4,7 +4,7 @@
 	//		RESPONSIVE YOUTUBE
 	//*******************************
 
-		var vidDimensionsMobile = {width:"360", height:"203"};
+		var vidDimensionsMobile = {width:"360", height:"203"};  //objects that contain the dimensions we want the youtube player to be at a particular browser width
 		var vidDimensionsTablet = {width:"560", height:"315"};
 		var vidDimensionsDesktop = {width:"853", height:"480"};
 

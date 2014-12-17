@@ -9,7 +9,7 @@ $selectedSection = "gallery";
 	
 	<?php include('inc/partials/back-home.html.php'); ?>
 
-	<h2>Lorizzle ipsizzle dolor check out this amizzle, consectetuer adipiscing elit. That's the shizzle that's the shizzle velit, for sure volutpizzle.</h2>
+	<h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et.</h2>
 
 	<section class="oFloAuto">
 

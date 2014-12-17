@@ -4,7 +4,7 @@
 		<meta charset = "utf-8">
 		<title>Source Mountain Records</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link href='http://fonts.googleapis.com/css?family=Chelsea+Market' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/responsive.css">
@@ -30,8 +30,7 @@
 						</nav>				  <!-- /mobile -->
 		
 						<div class="logo-container">
-							<a href="index.php"><img src="img/logo2.png"></a>
-							<h2>Source Mountain Records</h2>
+							<a href="index.php"><img src="img/smrLogos/FromOldLogo.png"></a>
 						</div>
 						
 						<nav class="main-nav" data-when="span" data-from="1" data-to="0.5" data-opacity="0">

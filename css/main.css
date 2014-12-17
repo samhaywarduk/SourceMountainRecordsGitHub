@@ -18,7 +18,7 @@
 
 body{
 	font-family: 'Raleway', sans-serif; /*default text font*/
-	color:#ddd; /*default text colour for the page*/
+	color:#fff; /*default text colour for the page*/
 	background-color:#0a090f; /*background colour for whole page*/
 }
 
@@ -52,7 +52,8 @@ a{
 }
 
 h1{
-	font-family: 'Chelsea Market', cursive;
+	font-family: 'Bitter', serif;
+	font-weight: normal;
 	font-size: 2.5em;
 }
 
@@ -64,7 +65,7 @@ p{
 ================================ */
 
 header{
-padding: 1% 15px 2%;
+padding: 2% 15px;
 background-image: url("../img/mountain4_mobile.jpg");
 background-repeat: no-repeat;
 background-position: center;
@@ -176,6 +177,21 @@ footer{
 	padding: 0.1px 2% 2%;
 	overflow: hidden;
 	margin-bottom: 4%;
+}
+
+.upcoming-shows{
+	padding: 0.1px 2% 2%;
+	margin-bottom: 4%;
+	border: 2px solid #D0DEFF;
+}
+
+.upcoming-shows ul{
+	text-align: center;
+}
+
+.upcoming-shows li{
+	display: block;
+	padding:5px;
 }
 
 .news{

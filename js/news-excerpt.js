@@ -38,7 +38,7 @@
 		$('.excerpt').each(function () {
 		
 			// Run formatWord function and specify the length of words display to viewer
-			$(this).html(formatWords($(this).html(), 50));
+			$(this).html(formatWords($(this).html(), 50));  //displays 50 words
 			
 			// Hide the extra words
 			$(this).children('span').hide();
